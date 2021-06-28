@@ -121,6 +121,7 @@ header{
 
    .header__line{
       margin-bottom: 50px;
+      max-width:200px;
    }
 }
 
