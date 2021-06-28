@@ -109,6 +109,7 @@ header{
 
 @media (max-width: 767.98px) { 
    .header__wrapper {
+      grid-template-columns: 200px;
       justify-content: center;
    }
 
