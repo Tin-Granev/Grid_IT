@@ -616,15 +616,15 @@ section.video__section{
 
 /* Элементы первой ul */
 .first__ul__li__first{
-   background: url('/img/mail.svg') no-repeat left center;
+   background: url('../img/mail.svg') no-repeat left center;
 }
 
 .first__ul__li__second{
-   background: url('/img/call.svg') no-repeat left center;
+   background: url('../img/call.svg') no-repeat left center;
 }
 
 .first__ul__li__third{
-   background: url('/img/place.svg') no-repeat left center;
+   background: url('../img/place.svg') no-repeat left center;
 }
 
 
@@ -639,7 +639,7 @@ section.video__section{
 
 /* все li всех ul , кроме первой */
 .ul__li{
-   background: url('/img/arrow.svg') no-repeat left center;
+   background: url('../img/arrow.svg') no-repeat left center;
 }
 
 .copyright{
