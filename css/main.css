@@ -77,7 +77,6 @@ header{
 .header__ul{
    grid-template-columns:107px 166px 98px 112px 120px;
    list-style: none;
-   max-width: 700px;
    line-height: 59px;
 }
 
@@ -109,8 +108,18 @@ header{
 }
 
 @media (max-width: 767.98px) { 
-   .header__ul , .header__line{
-      display: none;
+   .header__wrapper {
+      justify-content: center;
+   }
+
+   .header__ul {
+      grid-template-columns: 166px;
+      grid-template-rows: repeat(5, 60px);
+      justify-content: center;
+   }
+
+   .header__line{
+      margin-bottom: 50px;
    }
 }
 
