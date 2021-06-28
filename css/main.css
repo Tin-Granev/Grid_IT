@@ -31,10 +31,6 @@
    .container { 
       max-width: 479.98px; 
    } 
-
-   .header__ul{
-      grid-template-columns: repeat(auto-fill, 120px);
-   }
 }
 
 .grid{
@@ -83,6 +79,12 @@ header{
    list-style: none;
    max-width: 700px;
    line-height: 59px;
+}
+
+@media (max-width: 767.98px) { 
+   .header__ul{
+      display:none;
+   }
 }
 
 /* Элементы навигационного меню */
