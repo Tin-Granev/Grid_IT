@@ -81,12 +81,6 @@ header{
    line-height: 59px;
 }
 
-@media (max-width: 767.98px) { 
-   .header__ul{
-      display:none;
-   }
-}
-
 /* Элементы навигационного меню */
 .header__ul li{
    padding-bottom: 40px;
@@ -112,6 +106,12 @@ header{
       border-bottom: solid 1px rgba(255, 255, 255, 0.5);
       width: 100%;
       margin-bottom: 220px;
+}
+
+@media (max-width: 767.98px) { 
+   .header__ul , .header__line{
+      display: none;
+   }
 }
 
 /* текст в интро */
