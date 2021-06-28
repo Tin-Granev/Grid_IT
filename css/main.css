@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   font-family: "Montserrat";
+}
+
+/* убирает скролл */
+::-webkit-scrollbar {
+   width: 0;
+} 
+
+.container {
+   margin: 0 auto;
+   max-width: 1150px;
+   padding: 0 20px;
+}
+
+@media (max-width: 1153px) { 
+   .container { 
+      max-width: 992.98px; 
+   } 
+} 
+@media (max-width: 992.98px) { 
+   .container { 
+      max-width: 767.98px; 
+   } 
+} 
+@media (max-width: 767.98px) { 
+   .container { 
+      max-width: 479.98px; 
+   } 
+
+   .header__ul{
+      grid-template-columns: repeat(auto-fill, 120px);
+   }
+}
+
+.grid{
+   display: grid;
+}
+
+.wrapper{
+   grid-template: minmax(auto, 900px) 1fr minmax(auto, auto) / 1fr;
+}
+
+.btn{
+   background-color: #4985FF;
+   width: 200px;
+   height: 45px;
+   color: #fff;
+   font-size: 16px;
+   border: none;
+   border-radius: 30px;
+}
+
+.btn:hover{
+   background-color: #2f62c9;
+   cursor: pointer;
+}
+
+.link{
+   color:#4985FF;
+}
+
+/* !============================================================ */
+/* !СЕКЦИЯ ШАПКИ */
+header{
+   background: #A1A1A1 url('../img/header.jpg') no-repeat center top/cover;
+   padding: 40px 0 335px;
+}
+
+.header__wrapper{
+   grid-template-columns: 600px;
+   grid-template-rows: 1fr;
+   justify-content: end;
+}
+
+/* НАВИГАЦИОННОЕ МЕНЮ В ШАПКЕ */
+.header__ul{
+   grid-template-columns:107px 166px 98px 112px 120px;
+   list-style: none;
+   max-width: 700px;
+   line-height: 59px;
+}
+
+/* Элементы навигационного меню */
+.header__ul li{
+   padding-bottom: 40px;
+   align-items: center;
+   text-align: center;
+}
+
+/* подчеркивание у первого элемента навигации */
+.header__ul li:first-child{
+   border-bottom: 2px solid #FFFFFF;
+}
+
+/* Ссылки в элементах навигационного меню */
+.header__ul li a{
+   color: #fff;
+   text-decoration: none;
+   font-size: 16px;
+   line-height: 20px;
+}
+
+/* линия разделения в навигации */
+.header__line{
+      border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+      width: 100%;
+      margin-bottom: 220px;
+}
+
+/* текст в интро */
+.header__text{
+   text-align: center;
+   color: #fff;
+   margin-bottom: 20px;
+}
+
+/* заголовок в интро */
+.header__title{
+   color: #fff;
+   font-size: 48px;
+   font-weight: bold;
+   line-height: 64.36px;
+   text-align: center;
+   margin: 0 auto 50px;
+   max-width: 829px;
+}
+
+/* блок кнопки */
+.header__div__btn{
+   text-align: center;
+}
+
+/* !============================================================ */
+/* !ОСНОВНОЙ КОНТЕНТ */
+
+/* !============================================================ */
+/* !ПЕРВАЯ СЕКЦИЯ - МОБАЙЛ */
+section.mobile__section{
+   padding:110px 0 105px;
+}
+
+/* заголовок mobile */
+.mobile__title{
+   text-align: center;
+   margin: 0 auto 50px;
+   max-width: 739px;
+   color: #323232;
+   font-weight: bold;
+   font-size: 36px;
+   line-height: 53px;
+}
+
+/* текст mobile */
+.mobile__text{
+   color: #999999;
+   text-align: center;
+   margin: 0 auto 70px;
+   max-width: 728px;
+   font-size: 16px;
+   line-height: 25px;
+}
+
+/* блок трех проектов */
+.mobile__items{
+   grid-template-columns: repeat(auto-fill, 352.05px);
+   justify-content: center;
+   margin-bottom: 55px;
+}
+
+/*блока каждого из мобильных проектов */
+.mobile__item{
+   grid-template-columns: 110px 1fr;
+   margin-right: 27px;
+   padding-bottom: 50px;
+}
+
+/* блок текстов в мобильном проекте */
+.mobile__item__textes{
+   padding: 45px 0 0 17px;
+}
+
+/* заголовок в мобильном проекте */
+.mobile__item__title{
+   font-weight: 600; 
+   font-size: 18px;
+   line-height: 22px;
+   margin-bottom: 12px;
+}
+
+/* текст в мобильном */
+.mobile__item__text{
+   color: #999999;
+   font-size: 14px;
+   line-height: 22px;
+   max-width: 222px;
+}
+
+.mobile__div__btn{
+   text-align: center;
+}
+
+
+/* !============================================================ */
+/* !ВТОРАЯ СЕКЦИЯ STANDARTS*/
+section.standarts__section{
+   background-color:#F6F6F8;
+   padding: 110px 0 70px;
+}
+
+/* первый блок с текстом и изображением */
+.standarts__block{
+   grid-template-columns:repeat(auto-fill, 500px);
+   justify-content: space-between;
+   border-bottom: 1px solid #E0E0E0; 
+   padding-bottom: 90px;
+   margin-bottom: 70px;
+}
+
+/* левый блок */
+.standarts__left{
+   margin-bottom: 70px;
+}
+
+/* заголовок левого блока */
+.standarts__left__title{
+   color: #323232;
+   font-size: 36px;
+   line-height: 53px;
+   font-weight: bold;
+   
+   max-width: 424px;
+   padding-top: 52px;
+   padding-bottom: 40px;
+}
+
+/* параграф левого блока */
+.standarts__left__text{
+   color: #999999;
+   line-height: 25px;
+   font-size: 16px;
+   max-width: 489px;
+   margin-bottom: 30px;
+}
+
+/* картинка стандартов */
+.standarts__right img{
+   width: 500px;
+   height: 400px;
+   border-radius: 30px;
+}
+
+/* блок компонентов стандартов */
+.standarts__items{
+   grid-template-columns: repeat(auto-fill , 204px) ;
+   justify-content: center;
+}
+
+/* блок одного компонента из пяти */
+.items__div{
+   padding-bottom: 20px;
+   margin:0 auto;
+}
+
+/* блок изображения и цифры рядом */
+.items__block{
+   grid-template-columns: 30px 54px;
+   justify-content: space-between;
+   align-items: center;
+}
+
+/* параграф описания компонента */
+.item__text{
+   color: #999999;
+   font-size: 16px;
+   line-height: 25px;
+}
+
+/* цифра компонента */
+.item__num{
+   font-size: 36px;
+   line-height: 53px;
+}
+
+@media (max-width: 1153px) { 
+
+   /* БЛОК STANDARTS */
+   .standarts__block{
+      justify-content: center;
+   }
+
+   .standarts__items{
+      grid-template-columns: 104px;
+   }
+
+   .items__div{
+      margin-right: 0;
+   }
+}
+
+/* !============================================================ */
+/* !ТРЕТЬЯ СЕКЦИЯ WORKS */
+section.works__section{
+   background: url('../img/works_bg.png') no-repeat center top/cover;
+   padding-top: 100px;
+   margin-bottom: 85px;
+}
+
+/* блок секции WORKS */
+.works__div{
+   grid-template-rows: 1fr 1fr;
+   margin-bottom: 70px;
+}
+
+/* блок с текстом работ */
+.works__text{
+   grid-template-columns: repeat(auto-fill, minmax(200px, 504px));
+   justify-content: space-between;
+   align-items: center;
+   padding-bottom: 70px;
+}
+
+/* заголовок работ */
+.works__title{
+   color: #fff;
+   max-width: 504px;
+   padding-bottom:15px;
+
+   font-weight: bold;
+   font-size: 36px;
+   line-height: 53px;
+}
+
+/* блок с кнопкой */
+.works__div__btn {
+   text-align: end;
+}
+
+/* блок со всеми карточками */
+.works__cards{
+   grid-template-columns: repeat(auto-fill, 350px);
+   justify-content: space-between;
+   align-items: center;
+   padding-bottom: 85px;
+   border-bottom: 1px solid #E0E0E0;
+}
+
+/* блок с кратинкой */
+.works__one__card__img{
+   margin-bottom: 30px;
+}
+
+/* картинка карточки */
+.works__one__card__img img{
+   border-radius: 10px;
+}
+
+/* заголовок карточки */
+.works__one__card__title{
+   font-weight: 600;
+   line-height: 22px;
+   margin-bottom: 30px;
+}
+
+/* текст карточки */
+.works__one__card__text{
+   font-size: 16px;
+   line-height: 25px;
+   color: #999999;
+   margin-bottom: 30px;
+}
+
+@media (max-width: 1153px) { 
+
+   /* БЛОК WORKS */
+   .works__text{
+      justify-content: center;
+      text-align: center;
+   }
+
+   .works__div__btn {
+      text-align: center;
+   }
+
+   .items__div{
+      margin-right: 0;
+   }
+
+   .works__cards{
+      grid-template-columns: 350px;
+      justify-content: center;
+   }
+
+   .works__one__card{
+      margin-bottom: 90px;
+   }
+} 
+
+/* !============================================================ */
+/* !ЧЕТВЕРТАЯ СЕКЦИЯ PROJECTS*/
+section.projects__section{
+   background-color: #F6F6F8;
+   padding: 100px 0 130px;
+}
+
+/* блок с текстами над проектами */
+.projects{
+   margin-bottom: 70px;
+   text-align: center;
+}
+
+/* заголовок проектов */
+.projects__title{
+   font-weight: bold;
+   font-size: 36px;
+   line-height: 53px;
+   margin-bottom: 50px;
+}
+
+/* текст проекта */
+.projects__text{
+   max-width: 730px;
+   margin: 0 auto;
+   color: #999999;
+   line-height: 25px;
+}
+
+/* блок с проектами */
+.projects__cards{
+   grid-template-columns: repeat(auto-fill, 255px);
+   justify-content: space-between;
+   margin-bottom: 30px;
+}
+
+/* карточка одного проекта */
+.project__one__card{
+   margin-bottom:20px;
+}
+
+/* блок кнопки проекта */
+.projects__div__btn{
+   text-align: center;
+}
+
+@media (max-width: 1153px) { 
+   .projects__cards{
+      grid-template-columns: 255px;
+      justify-content: center;
+   }
+} 
+
+
+/* !============================================================ */
+/* ПЯТАЯ СЕКЦИЯ  VIDEO*/
+section.video__section{
+   background: url('../img/video_bg.jpg') no-repeat center top/100% 50%;
+   padding-top:70px;
+}
+
+/* заголовок к видео */
+.video__title{
+   font-weight: bold;
+   font-size: 36px;
+   line-height: 53px;
+   text-align: center;
+   color: #fff;
+   margin-bottom: 30px;
+}
+
+/* текст к видео */
+.video__text{
+   font-size: 16px;
+   line-height: 25px;
+   text-align: center;
+   color: #fff;
+   margin-bottom: 70px;
+}
+
+/* контейнер в секции видео */
+.video__player{
+   max-width: 970px;
+   margin: 0 auto 85px;
+   padding-bottom:85px;
+   border-bottom: solid 1px #E0E0E0;
+}
+
+.video__player img{
+   max-width: 100%;
+   height: auto;
+}
+
+/* заголовок подпишитесь */
+.subscribe__title{
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 22px;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+/* текст подпишитесь */
+.subscribe__text{
+   line-height: 25px;
+   text-align: center;
+   color: #999999;
+   margin-bottom: 30px;
+}
+
+.subscribe__input{
+   margin-bottom:35px;
+   grid-template-columns:299px 190px;
+   justify-content: center;
+}
+
+/* инпут подписаться */
+.subscribe__input input{
+   box-shadow: -5px 5px 14px 4px  rgba(111,111,111,0.25);
+   border-radius: 30px 0px 0px 30px;
+   border:none;
+   width: 299px;
+   height: 45px;
+   padding-left: 33px;
+}
+
+/* плейсхолдер инпута */
+.subscribe_input input::placeholder{
+   font-style: normal;
+   font-size: 13px;
+   line-height: 21px;
+   color: #999999;
+}
+
+/* инпут подписаться при нажатии*/
+.subscribe__input input:focus{
+   outline: none;
+}
+
+/* кнопка подписаться */
+.subscribe__input button{
+   box-shadow: 5px 5px 14px 4px rgba(111, 111, 111, 0.25);
+   border-radius: 0px 30px 30px 0px;
+   border:none;
+   width: 190px;
+   height: 45px;
+   background: #4985ff;
+   color: #fff;
+   font-size: 16px;
+   line-height: 20px;
+}
+
+/* кнопка подписаться при наведении */
+.subscribe__input button:hover{
+   background-color: #2f62c9;
+   cursor: pointer;
+}
+
+/* текст после инпута */
+.subscribe__subtext{
+   font-size: 13px;
+   line-height: 21px;
+   text-align: center;
+   color: #999999;
+   margin-bottom:  85px;
+}
+
+/* !============================================================ */
+/* !ФУТЕР */
+.footer{
+   background: #F6F6F8;
+   padding-top: 70px;
+}
+
+/* блок со всеми ul */
+.ul__all{
+   grid-template-columns: repeat(auto-fill, 255px);
+   justify-content: space-between;
+   border-bottom: solid 1px #E0E0E0;
+   padding-bottom: 70px;
+   margin-bottom: 30px;
+}
+
+/* все ul */
+.ul{
+   list-style: none;
+}
+
+
+@media (max-width: 1153px) { 
+   .ul__all{
+      grid-template-columns: 255px;
+      justify-content: center;
+   }
+
+   /* отступ (для маленьких экранов нужен) */
+   .ul__all ul{
+      margin-bottom: 20px;
+   }
+} 
+
+/* заголовок всех ul */
+.ul__title{
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 22px;
+   margin-bottom: 35px !important;
+}
+
+/* все элементы всех ul */
+.ul__all ul li {
+   margin-bottom: 30px;
+}
+
+/* Элементы первой ul */
+.first__ul__li__first{
+   background: url('/img/mail.svg') no-repeat left center;
+}
+
+.first__ul__li__second{
+   background: url('/img/call.svg') no-repeat left center;
+}
+
+.first__ul__li__third{
+   background: url('/img/place.svg') no-repeat left center;
+}
+
+
+/* элементы первой ul не включая заголовок */
+.first__ul__li__first, .first__ul__li__second, .first__ul__li__third, .ul__li{
+   align-items: center; 
+   font-size: 14px;
+   line-height: 22px;
+   color: #999999;
+   padding-left: 30px;
+}
+
+/* все li всех ul , кроме первой */
+.ul__li{
+   background: url('/img/arrow.svg') no-repeat left center;
+}
+
+.copyright{
+   font-size: 13px;
+   line-height: 21px;
+   text-align: center;
+   color: #999999;
+   margin-bottom: 30px;
+}
+
+
