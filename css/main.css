@@ -7,9 +7,9 @@
 }
 
 /* убирает скролл */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
    width: 0;
-} 
+}  */
 
 .container {
    margin: 0 auto;
